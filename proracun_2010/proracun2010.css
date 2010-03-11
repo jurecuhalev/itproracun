@@ -70,3 +70,10 @@ html, body {
     position:absolute;
 }
 
+#footer {
+  color: white;
+}
+
+#footer a {
+  color: white;
+}

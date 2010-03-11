@@ -112,11 +112,33 @@ for i in struct:
     for postavka in data['postavke']:
         p = data['postavke'][postavka]
         pos_child = dict()
-        pos_child['name'] = p['element_opis']
+        pos_child['name'] = "" #p['element_opis']
         pos_child['id'] = 'child'+str(c)
         c += 1
-        pos_child['data'] = {'$area': p['vrednost'],
-                             '$color': 8,}
+        pos_child['data'] = {'$area': p['vrednost']}
+        
+        koda = int(p['element_koda'])
+        
+        if (koda > 10000 and koda < 80002):
+          pos_child['data']['$color'] = 60; # hardware
+          
+        elif (koda > 100000 and koda < 100017):
+          pos_child['data']['$color'] = 60; # multimedia
+
+        elif (koda > 110007 and koda < 180011):
+          pos_child['data']['$color'] = 60; # network
+
+        elif (koda > 190001 and koda < 300002):
+          pos_child['data']['$color'] = 60; # serverji
+
+        elif (koda > 310000 and koda < 410007):
+          pos_child['data']['$color'] = 10; # software, vzdrzevanje, licence
+          
+        elif (koda > 420000 and koda < 450006):
+          pos_child['data']['$color'] = 30; # Zunanje storitve, izobrazevanje
+          
+        else:
+          pos_child['data']['$color'] = 30;
         for key in p:
           pos_child['data'][key] = p[key]
           
@@ -140,7 +162,7 @@ print """
                 addRightClickHandler: true,
                 Color: {
                   allow: true,
-                  minValue: -100,
+                  minValue: 0,
                   maxValue: 100,
                   minColorValue: [0, 255, 50],
                   maxColorValue: [255, 0, 50] 
@@ -153,9 +175,9 @@ print """
                   
                   onShow: function(tip, node, isLeaf, domElement) {
                     if (node.data.cena_enote) {
-                      tip.innerHTML = "<b>" + node.name + "</b>" + "<br />" + node.data.kolicina + ' * ' + node.data.cena_enote + ' € = ' + node.data.vrednost + ' €  <br /><br />' + node.data.podkonto_opis + '<br />' + node.data.namen_opis;
+                      tip.innerHTML = "<b>" + node.data.namen_opis + "</b>" + "<br />" + node.data.podkonto_opis + "<br /></br >" + node.data.kolicina + ' * ' + node.data.cena_enote + ' EUR = ' + node.data.vrednost + ' EUR  <br />' + node.data.element_opis;
                     } else {
-                      tip.innerHTML = "<b>" + node.name + "</b>" + "<br />" + node.data.skupaj + ' €';
+                      tip.innerHTML = "<b>" + node.name + "</b>" + "<br />" + node.data.skupaj + ' EUR';
                     }; 
                   }
                 
@@ -166,8 +188,8 @@ print """
 }
 """.replace('', '')
 
-# pprint(struct['1536'])
-# k = struct['1536']
-# for p in k['postavke']:
-#   m = k['postavke'][p]
-#   print m['vrednost']
+# for i in struct:
+#   data = struct[i]
+#   for postavka in data['postavke']:
+#     p = data['postavke'][postavka]
+#     print "%s %s %s" % (p['element_koda'], p['element_opis'], p['namen_opis'])
