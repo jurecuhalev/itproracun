@@ -1,0 +1,317 @@
+function init() {
+    // var json = {
+    //     "id": "34node02",
+    //     "name": "0.2",
+    //     "data": {
+    //         "$area": 195,
+    //         "$color": 5
+    //     },
+    //     "children": [{
+    //         "id": "node13",
+    //         "name": "1.3",
+    //         "data": {
+    //             "$area": 23,
+    //             "$color": 8
+    //         },
+    //         "children": [{
+    //             "id": "node24",
+    //             "name": "2.4",
+    //             "data": {
+    //                 "$area": 6,
+    //                 "$color": -75
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node25",
+    //             "name": "2.5",
+    //             "data": {
+    //                 "$area": 9,
+    //                 "$color": -48
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node26",
+    //             "name": "2.6",
+    //             "data": {
+    //                 "$area": 1,
+    //                 "$color": -1
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node27",
+    //             "name": "2.7",
+    //             "data": {
+    //                 "$area": 7,
+    //                 "$color": 25
+    //             },
+    //             "children": []
+    //         }]
+    //     }, {
+    //         "id": "node18",
+    //         "name": "1.8",
+    //         "data": {
+    //             "$area": 17,
+    //             "$color": 28
+    //         },
+    //         "children": [{
+    //             "id": "node29",
+    //             "name": "2.9",
+    //             "data": {
+    //                 "$area": 8,
+    //                 "$color": -28
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node210",
+    //             "name": "2.10",
+    //             "data": {
+    //                 "$area": 9,
+    //                 "$color": -83
+    //             },
+    //             "children": []
+    //         }]
+    //     }, {
+    //         "id": "node111",
+    //         "name": "1.11",
+    //         "data": {
+    //             "$area": 25,
+    //             "$color": -82
+    //         },
+    //         "children": [{
+    //             "id": "node212",
+    //             "name": "2.12",
+    //             "data": {
+    //                 "$area": 8,
+    //                 "$color": -27
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node213",
+    //             "name": "2.13",
+    //             "data": {
+    //                 "$area": 3,
+    //                 "$color": -80
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node214",
+    //             "name": "2.14",
+    //             "data": {
+    //                 "$area": 7,
+    //                 "$color": -73
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node215",
+    //             "name": "2.15",
+    //             "data": {
+    //                 "$area": 7,
+    //                 "$color": 26
+    //             },
+    //             "children": []
+    //         }]
+    //     }, {
+    //         "id": "node116",
+    //         "name": "1.16",
+    //         "data": {
+    //             "$area": 17,
+    //             "$color": 91
+    //         },
+    //         "children": [{
+    //             "id": "node217",
+    //             "name": "2.17",
+    //             "data": {
+    //                 "$area": 7,
+    //                 "$color": 48
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node218",
+    //             "name": "2.18",
+    //             "data": {
+    //                 "$area": 10,
+    //                 "$color": -86
+    //             },
+    //             "children": []
+    //         }]
+    //     }, {
+    //         "id": "node119",
+    //         "name": "1.19",
+    //         "data": {
+    //             "$area": 52,
+    //             "$color": -77
+    //         },
+    //         "children": [{
+    //             "id": "node220",
+    //             "name": "2.20",
+    //             "data": {
+    //                 "$area": 8,
+    //                 "$color": 64
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node221",
+    //             "name": "2.21",
+    //             "data": {
+    //                 "$area": 5,
+    //                 "$color": 84
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node222",
+    //             "name": "2.22",
+    //             "data": {
+    //                 "$area": 6,
+    //                 "$color": 81
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node223",
+    //             "name": "2.23",
+    //             "data": {
+    //                 "$area": 1,
+    //                 "$color": 25
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node224",
+    //             "name": "2.24",
+    //             "data": {
+    //                 "$area": 4,
+    //                 "$color": 18
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node225",
+    //             "name": "2.25",
+    //             "data": {
+    //                 "$area": 10,
+    //                 "$color": 37
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node226",
+    //             "name": "2.26",
+    //             "data": {
+    //                 "$area": 8,
+    //                 "$color": 83
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node227",
+    //             "name": "2.27",
+    //             "data": {
+    //                 "$area": 10,
+    //                 "$color": -62
+    //             },
+    //             "children": []
+    //         }]
+    //     }, {
+    //         "id": "node128",
+    //         "name": "1.28",
+    //         "data": {
+    //             "$area": 37,
+    //             "$color": -40
+    //         },
+    //         "children": [{
+    //             "id": "node229",
+    //             "name": "2.29",
+    //             "data": {
+    //                 "$area": 8,
+    //                 "$color": -67
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node230",
+    //             "name": "2.30",
+    //             "data": {
+    //                 "$area": 8,
+    //                 "$color": 46
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node231",
+    //             "name": "2.31",
+    //             "data": {
+    //                 "$area": 4,
+    //                 "$color": -99
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node232",
+    //             "name": "2.32",
+    //             "data": {
+    //                 "$area": 8,
+    //                 "$color": -38
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node233",
+    //             "name": "2.33",
+    //             "data": {
+    //                 "$area": 1,
+    //                 "$color": -3
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node234",
+    //             "name": "2.34",
+    //             "data": {
+    //                 "$area": 8,
+    //                 "$color": 82
+    //             },
+    //             "children": []
+    //         }]
+    //     }, {
+    //         "id": "node135",
+    //         "name": "1.35",
+    //         "data": {
+    //             "$area": 24,
+    //             "$color": 63
+    //         },
+    //         "children": [{
+    //             "id": "node236",
+    //             "name": "2.36",
+    //             "data": {
+    //                 "$area": 10,
+    //                 "$color": 8
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node237",
+    //             "name": "2.37",
+    //             "data": {
+    //                 "$area": 8,
+    //                 "$color": 63
+    //             },
+    //             "children": []
+    //         }, {
+    //             "id": "node238",
+    //             "name": "2.38",
+    //             "data": {
+    //                 "$area": 6,
+    //                 "$color": 46
+    //             },
+    //             "children": []
+    //         }]
+    //     }]
+    // };
+    
+    var json = {"children": [{"children": [{"children": [], "data": {"$area": "43899", "$color": 8}, "name": "Nadgradnja informacijskega sistema na novo verzijo aplikacijskega ali operacijskega sistema ali sistema za upravljanje z zbirko podatkov", "id": "child1"}], "data": {"$area": 43899.0, "$color": 6}, "name": "2713 - Zdravstveni in\u0102\u00b6pektorat RS, verzija: 6", "id": "child0"}, {"children": [{"children": [], "data": {"$area": "42700", "$color": 8}, "name": "Izdelava \u0102\u00b6tudije izvedljivosti", "id": "child3"}, {"children": [], "data": {"$area": "16899,69", "$color": 8}, "name": "Ostalo", "id": "child4"}, {"children": [], "data": {"$area": "7535", "$color": 8}, "name": "Izdelava \u0102\u00b6tudije izvedljivosti", "id": "child5"}, {"children": [], "data": {"$area": "15000", "$color": 8}, "name": "Ostalo", "id": "child6"}, {"children": [], "data": {"$area": "26413", "$color": 8}, "name": "Izdelava \u0102\u00b6tudije izvedljivosti", "id": "child7"}, {"children": [], "data": {"$area": "6000", "$color": 8}, "name": "Ostalo", "id": "child8"}], "data": {"$area": 114547.69, "$color": 6}, "name": "2711 - Ministrstvo za zdravje, verzija: 8", "id": "child2"}, {"children": [{"children": [], "data": {"$area": "500", "$color": 8}, "name": "Ostalo", "id": "child10"}], "data": {"$area": 500.0, "$color": 6}, "name": "2717 - Uprava RS za varstvo pred sevanji, verzija: 7", "id": "child9"}, {"children": [{"children": [], "data": {"$area": "1200", "$color": 8}, "name": "Ostalo", "id": "child12"}, {"children": [], "data": {"$area": "10700", "$color": 8}, "name": "Dopolnjevanje informacijskih aplikativnih sistemov", "id": "child13"}, {"children": [], "data": {"$area": "43500", "$color": 8}, "name": "Dopolnjevanje informacijskih aplikativnih sistemov", "id": "child14"}], "data": {"$area": 55400.0, "$color": 6}, "name": "2715 - Urad RS za kemikalije, verzija: 8", "id": "child11"}, {"children": [{"children": [], "data": {"$area": "6140", "$color": 8}, "name": "Dopolnjevanje informacijskih aplikativnih sistemov", "id": "child16"}, {"children": [], "data": {"$area": "0", "$color": 8}, "name": "Nadgradnja sistema SAN", "id": "child17"}], "data": {"$area": 6140.0, "$color": 6}, "name": "2321 - Fitosanitarna uprava RS, verzija: 6", "id": "child15"}, {"children": [{"children": [], "data": {"$area": "8000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme", "id": "child19"}, {"children": [], "data": {"$area": "423682,48", "$color": 8}, "name": "Nadgradnja informacijskega sistema na novo verzijo aplikacijskega ali operacijskega sistema ali sistema za upravljanje z zbirko podatkov", "id": "child20"}, {"children": [], "data": {"$area": "20000", "$color": 8}, "name": "Dopolnjevanje informacijskih aplikativnih sistemov", "id": "child21"}, {"children": [], "data": {"$area": "15000", "$color": 8}, "name": "Dopolnjevanje informacijskih aplikativnih sistemov", "id": "child22"}, {"children": [], "data": {"$area": "74767,52", "$color": 8}, "name": "Nadgradnja informacijskega sistema na novo verzijo aplikacijskega ali operacijskega sistema ali sistema za upravljanje z zbirko podatkov", "id": "child23"}], "data": {"$area": 541450.0, "$color": 6}, "name": "2523 - Agencija RS za okolje, verzija: 9", "id": "child18"}, {"children": [{"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje in podpora komunikacijskega omre\u0102\u00bbja", "id": "child25"}, {"children": [], "data": {"$area": "15000", "$color": 8}, "name": "Na\u0102\u2039rtovanje podatkovne zbirke", "id": "child26"}], "data": {"$area": 16000.0, "$color": 6}, "name": "2522 - In\u0102\u00b6pektorat RS za okolje in prostor, verzija: 7", "id": "child24"}, {"children": [{"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Opti\u0102\u2039ni \u0102\u2039italnik  A4 s podajalcem", "id": "child28"}], "data": {"$area": 1000.0, "$color": 6}, "name": "6241 - Upravna enota Ribnica, verzija: 8", "id": "child27"}, {"children": [{"children": [], "data": {"$area": "3200", "$color": 8}, "name": "Ostalo", "id": "child30"}, {"children": [], "data": {"$area": "21982", "$color": 8}, "name": "Testiranje IS", "id": "child31"}, {"children": [], "data": {"$area": "9434", "$color": 8}, "name": "Dopolnjevanje informacijskih aplikativnih sistemov", "id": "child32"}, {"children": [], "data": {"$area": "29289", "$color": 8}, "name": "Ostalo", "id": "child33"}, {"children": [], "data": {"$area": "30000", "$color": 8}, "name": "Dopolnjevanje informacijskih aplikativnih sistemov", "id": "child34"}, {"children": [], "data": {"$area": "20000", "$color": 8}, "name": "Ostalo", "id": "child35"}, {"children": [], "data": {"$area": "165970", "$color": 8}, "name": "Ostalo", "id": "child36"}], "data": {"$area": 279875.0, "$color": 6}, "name": "2011 - Ministrstvo za pravosodje, verzija: 6", "id": "child29"}, {"children": [{"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Standardni prenosni ra\u0102\u2039unalnik", "id": "child38"}], "data": {"$area": 1000.0, "$color": 6}, "name": "6246 - Upravna enota Slovenska Bistrica, verzija: 7", "id": "child37"}, {"children": [{"children": [], "data": {"$area": "90000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje in podpora informacijskih sistemov", "id": "child40"}, {"children": [], "data": {"$area": "1239781", "$color": 8}, "name": "Dopolnjevanje informacijskih aplikativnih sistemov", "id": "child41"}], "data": {"$area": 1329781.0, "$color": 6}, "name": "2318 - Agencija RS za kmetijske trge in razvoj pode\u0102\u00bbelja, verzija: 7", "id": "child39"}, {"children": [{"children": [], "data": {"$area": "50000", "$color": 8}, "name": "Ve\u0102\u2039procesorski ve\u0102\u2039jedrni stre\u0102\u00bbnik", "id": "child43"}], "data": {"$area": 50000.0, "$color": 6}, "name": "2312 - Veterinarska uprava RS, verzija: 8", "id": "child42"}, {"children": [{"children": [], "data": {"$area": "160000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039nih aplikativnih informacijskih sistemov", "id": "child45"}], "data": {"$area": 160000.0, "$color": 6}, "name": "2311 - Ministrstvo za kmetijstvo, gozdarstvo in prehrano, verzija: 8", "id": "child44"}, {"children": [{"children": [], "data": {"$area": "3000", "$color": 8}, "name": "Ostalo", "id": "child47"}, {"children": [], "data": {"$area": "65032", "$color": 8}, "name": "Ostalo", "id": "child48"}, {"children": [], "data": {"$area": "2555", "$color": 8}, "name": "Ostalo", "id": "child49"}, {"children": [], "data": {"$area": "12000", "$color": 8}, "name": "Ostalo", "id": "child50"}, {"children": [], "data": {"$area": "6000", "$color": 8}, "name": "Ostalo", "id": "child51"}, {"children": [], "data": {"$area": "2722", "$color": 8}, "name": "Ostalo", "id": "child52"}], "data": {"$area": 91309.0, "$color": 6}, "name": "2411 - Ministrstvo za promet, verzija: 8", "id": "child46"}, {"children": [{"children": [], "data": {"$area": "30000", "$color": 8}, "name": "Ostalo", "id": "child54"}, {"children": [], "data": {"$area": "20000", "$color": 8}, "name": "Nadgradnja  programske opreme", "id": "child55"}], "data": {"$area": 50000.0, "$color": 6}, "name": "2412 - Uprava RS za pomorstvo, verzija: 6", "id": "child53"}, {"children": [{"children": [], "data": {"$area": "51000", "$color": 8}, "name": "Strojna in programska oprema za posredovanje ve\u0102\u2039predstavnostni h vsebin", "id": "child57"}], "data": {"$area": 51000.0, "$color": 6}, "name": "2415 - Direkcija RS za ceste, verzija: 6", "id": "child56"}, {"children": [{"children": [], "data": {"$area": "1043", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje programske opreme s pravico do popravkov, varnostnih popravkov, nadgradenj in novih verzij", "id": "child59"}], "data": {"$area": 1043.0, "$color": 6}, "name": "6253 - Upravna enota Trebnje, verzija: 6", "id": "child58"}, {"children": [{"children": [], "data": {"$area": "3000", "$color": 8}, "name": "Izvajanje uporabni\u0102\u00b6kega izobra\u0102\u00bbevanja", "id": "child61"}, {"children": [], "data": {"$area": "7000", "$color": 8}, "name": "Nadgradnja programske opreme", "id": "child62"}], "data": {"$area": 10000.0, "$color": 6}, "name": "2418 - Prometni in\u0102\u00b6pektorat RS, verzija: 6", "id": "child60"}, {"children": [{"children": [], "data": {"$area": "90", "$color": 8}, "name": "Ostalo", "id": "child64"}], "data": {"$area": 90.0, "$color": 6}, "name": "6251 - Upravna enota Tolmin, verzija: 6", "id": "child63"}, {"children": [{"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Laserski tiskalniki", "id": "child66"}], "data": {"$area": 1000.0, "$color": 6}, "name": "6250 - Upravna enota \u0102\u00a4marje pri Jel\u0102\u00b6ah, verzija: 8", "id": "child65"}, {"children": [{"children": [], "data": {"$area": "500", "$color": 8}, "name": "Ostalo", "id": "child68"}], "data": {"$area": 500.0, "$color": 6}, "name": "5011 - Vi\u0102\u00b6je delovno in socialno sodi\u0102\u00b6\u0102\u2039e, verzija: 6", "id": "child67"}, {"children": [{"children": [], "data": {"$area": "200", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme", "id": "child70"}], "data": {"$area": 200.0, "$color": 6}, "name": "5013 - Delovno sodi\u0102\u00b6\u0102\u2039e v Kopru, verzija: 6", "id": "child69"}, {"children": [{"children": [], "data": {"$area": "2000", "$color": 8}, "name": "Zmogljivej\u0102\u00b6i osebni ra\u0102\u2039unalnik", "id": "child72"}], "data": {"$area": 2000.0, "$color": 6}, "name": "5015 - Delovno sodi\u0102\u00b6\u0102\u2039e v Mariboru, verzija: 6", "id": "child71"}, {"children": [{"children": [], "data": {"$area": "10000", "$color": 8}, "name": "Izvajanje strokovnega izobra\u0102\u00bbevanja", "id": "child74"}, {"children": [], "data": {"$area": "240000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje aplikativnih informacijskih sistemov", "id": "child75"}, {"children": [], "data": {"$area": "650000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039nih aplikativnih informacijskih sistemov", "id": "child76"}, {"children": [], "data": {"$area": "108130", "$color": 8}, "name": "Ostalo", "id": "child77"}], "data": {"$area": 1008130.0, "$color": 6}, "name": "1711 - Ministrstvo za notranje zadeve, verzija: 11", "id": "child73"}, {"children": [{"children": [], "data": {"$area": "417", "$color": 8}, "name": "Ostalo", "id": "child79"}], "data": {"$area": 417.0, "$color": 6}, "name": "4419 - Okro\u0102\u00bbno dr\u0102\u00bbavno to\u0102\u00bbilstvo v Ljubljani, verzija: 6", "id": "child78"}, {"children": [{"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Laserski tiskalniki", "id": "child81"}, {"children": [], "data": {"$area": "1000", "$color": 8}, "name": "LCD zaslon 17", "id": "child82"}], "data": {"$area": 2000.0, "$color": 6}, "name": "4418 - Okro\u0102\u00bbno dr\u0102\u00bbavno to\u0102\u00bbilstvo v Kranju, verzija: 6", "id": "child80"}, {"children": [{"children": [], "data": {"$area": "200", "$color": 8}, "name": "Ostalo", "id": "child84"}], "data": {"$area": 200.0, "$color": 6}, "name": "4417 - Okro\u0102\u00bbno dr\u0102\u00bbavno to\u0102\u00bbilstvo v Kopru, verzija: 6", "id": "child83"}, {"children": [{"children": [], "data": {"$area": "2000", "$color": 8}, "name": "Ostalo", "id": "child86"}], "data": {"$area": 2000.0, "$color": 6}, "name": "4411 - Vrhovno dr\u0102\u00bbavno to\u0102\u00bbilstvo RS, verzija: 6", "id": "child85"}, {"children": [{"children": [], "data": {"$area": "64864,99", "$color": 8}, "name": "Ostalo", "id": "child88"}, {"children": [], "data": {"$area": "122400", "$color": 8}, "name": "Ostalo", "id": "child89"}], "data": {"$area": 187264.98999999999, "$color": 6}, "name": "1524 - Slovenska obve\u0102\u00b6\u0102\u2039evalno - varnostna agencija, verzija: 7", "id": "child87"}, {"children": [{"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Ostalo", "id": "child91"}], "data": {"$area": 1000.0, "$color": 6}, "name": "1526 - Urad vlade za verske skupnosti, verzija: 6", "id": "child90"}, {"children": [{"children": [], "data": {"$area": "12519", "$color": 8}, "name": "Nadgradnja informacijskega sistema na novo verzijo aplikacijskega ali operacijskega sistema ali sistema za upravljanje z zbirko podatkov", "id": "child93"}, {"children": [], "data": {"$area": "189879,24", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje aplikativnih informacijskih sistemov", "id": "child94"}, {"children": [], "data": {"$area": "20860", "$color": 8}, "name": "Nadgradnja informacijskega sistema na novo verzijo aplikacijskega ali operacijskega sistema ali sistema za upravljanje z zbirko podatkov", "id": "child95"}], "data": {"$area": 223258.23999999999, "$color": 6}, "name": "1522 - Statisti\u0102\u2039ni urad Republike Slovenije, verzija: 6", "id": "child92"}, {"children": [{"children": [], "data": {"$area": "135000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje programske opreme s pravico do popravkov, varnostnih popravkov, nadgradenj in novih verzij", "id": "child97"}], "data": {"$area": 135000.0, "$color": 6}, "name": "2020 - Uprava RS za izvr\u0102\u00b6evanje kazenskih sankcij, verzija: 6", "id": "child96"}, {"children": [{"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Standardni prenosni ra\u0102\u2039unalnik", "id": "child99"}], "data": {"$area": 1000.0, "$color": 6}, "name": "6212 - Upravna enota Ilirska Bistrica, verzija: 7", "id": "child98"}, {"children": [{"children": [], "data": {"$area": "110", "$color": 8}, "name": "Ostalo", "id": "child101"}], "data": {"$area": 110.0, "$color": 6}, "name": "4215 - Okro\u0102\u00bbno sodi\u0102\u00b6\u0102\u2039e v Celju, verzija: 6", "id": "child100"}, {"children": [{"children": [], "data": {"$area": "3500", "$color": 8}, "name": "Nadgradnja  programske opreme", "id": "child103"}], "data": {"$area": 3500.0, "$color": 6}, "name": "4216 - Okro\u0102\u00bbno sodi\u0102\u00b6\u0102\u2039e v Kopru, verzija: 6", "id": "child102"}, {"children": [{"children": [], "data": {"$area": "364", "$color": 8}, "name": "Ostalo", "id": "child105"}], "data": {"$area": 364.0, "$color": 6}, "name": "4211 - Vi\u0102\u00b6je sodi\u0102\u00b6\u0102\u2039e Celje, verzija: 6", "id": "child104"}, {"children": [{"children": [], "data": {"$area": "165", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme", "id": "child107"}], "data": {"$area": 165.0, "$color": 6}, "name": "4212 - Vi\u0102\u00b6je sodi\u0102\u00b6\u0102\u2039e Koper, verzija: 6", "id": "child106"}, {"children": [{"children": [], "data": {"$area": "9000", "$color": 8}, "name": "Razvoj IS", "id": "child109"}], "data": {"$area": 9000.0, "$color": 6}, "name": "4218 - Okro\u0102\u00bbno sodi\u0102\u00b6\u0102\u2039e v Ljubljani, verzija: 8", "id": "child108"}, {"children": [{"children": [], "data": {"$area": "7300", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme s pravico do popravkov, varnostnih popravkov, nadgradenj in novih verzij", "id": "child111"}], "data": {"$area": 7300.0, "$color": 6}, "name": "1411 - Kabinet predsednika vlade, verzija: 8", "id": "child110"}, {"children": [{"children": [], "data": {"$area": "1270371", "$color": 8}, "name": "Nadgradnja informacijskega sistema na novo verzijo aplikacijskega ali operacijskega sistema ali sistema za upravljanje z zbirko podatkov", "id": "child113"}, {"children": [], "data": {"$area": "38500", "$color": 8}, "name": "Na\u0102\u2039rtovanje poslovnih procesov", "id": "child114"}], "data": {"$area": 1308871.0, "$color": 6}, "name": "3311 - Ministrstvo za \u0102\u00b6olstvo in \u0102\u00b6port, verzija: 7", "id": "child112"}, {"children": [{"children": [], "data": {"$area": "10900", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme s pravico do popravkov, varnostnih popravkov in nadgradenj", "id": "child116"}], "data": {"$area": 10900.0, "$color": 6}, "name": "3314 - In\u0102\u00b6pektorat RS za \u0102\u00b6olstvo in \u0102\u00b6port, verzija: 3", "id": "child115"}, {"children": [{"children": [], "data": {"$area": "251", "$color": 8}, "name": "Laserski tiskalniki", "id": "child118"}], "data": {"$area": 251.0, "$color": 6}, "name": "4422 - Okro\u0102\u00bbno dr\u0102\u00bbavno to\u0102\u00bbilstvo v Novi Gorici, verzija: 6", "id": "child117"}, {"children": [{"children": [], "data": {"$area": "200", "$color": 8}, "name": "Laserski tiskalniki", "id": "child120"}], "data": {"$area": 200.0, "$color": 6}, "name": "4420 - Okro\u0102\u00bbno dr\u0102\u00bbavno to\u0102\u00bbilstvo v Mariboru, verzija: 6", "id": "child119"}, {"children": [{"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Ostalo", "id": "child122"}], "data": {"$area": 1000.0, "$color": 6}, "name": "4426 - Okro\u0102\u00bbno dr\u0102\u00bbavno to\u0102\u00bbilstvo v Slovenj Gradcu, verzija: 6", "id": "child121"}, {"children": [{"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Ostalo", "id": "child124"}], "data": {"$area": 1000.0, "$color": 6}, "name": "4424 - Okro\u0102\u00bbno dr\u0102\u00bbavno to\u0102\u00bbilstvo v Kr\u0102\u00b6kem, verzija: 6", "id": "child123"}, {"children": [{"children": [], "data": {"$area": "1287", "$color": 8}, "name": "Ostalo", "id": "child126"}], "data": {"$area": 1287.0, "$color": 6}, "name": "4425 - Okro\u0102\u00bbno dr\u0102\u00bbavno to\u0102\u00bbilstvo na Ptuju, verzija: 6", "id": "child125"}, {"children": [{"children": [], "data": {"$area": "10000", "$color": 8}, "name": "Sistem za celovito upravljanje in izvajanje ve\u0102\u2039nivojske podpore uporabnikov", "id": "child128"}, {"children": [], "data": {"$area": "2556,54", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme", "id": "child129"}], "data": {"$area": 12556.540000000001, "$color": 6}, "name": "1537 - Urad Vlade RS za Slovence v zamejstvu in po svetu, verzija: 4", "id": "child127"}, {"children": [{"children": [], "data": {"$area": "52500", "$color": 8}, "name": "Podpora delovnim mestom", "id": "child131"}, {"children": [], "data": {"$area": "150000", "$color": 8}, "name": "Podpora delovnim mestom", "id": "child132"}, {"children": [], "data": {"$area": "127500", "$color": 8}, "name": "Podpora delovnim mestom", "id": "child133"}, {"children": [], "data": {"$area": "425000", "$color": 8}, "name": "Podpora delovnim mestom", "id": "child134"}, {"children": [], "data": {"$area": "8500", "$color": 8}, "name": "Sistemi in enote za varnostno shranjevanje podatkov", "id": "child135"}, {"children": [], "data": {"$area": "10000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje in podpora aktivne mre\u0102\u00bbne opreme", "id": "child136"}, {"children": [], "data": {"$area": "50000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje programske opreme s pravico do popravkov, varnostnih popravkov, nadgradenj in novih verzij", "id": "child137"}, {"children": [], "data": {"$area": "297500", "$color": 8}, "name": "Podpora delovnim mestom", "id": "child138"}, {"children": [], "data": {"$area": "75000", "$color": 8}, "name": "Podpora delovnim mestom", "id": "child139"}], "data": {"$area": 1196000.0, "$color": 6}, "name": "1536 - Slu\u0102\u00bbba Vlade RS za lokalno samoupravo in regionalno politiko, verzija: 8", "id": "child130"}, {"children": [{"children": [], "data": {"$area": "33000", "$color": 8}, "name": "Ostala strojna ra\u0102\u2039unalni\u0102\u00b6ka oprema", "id": "child141"}], "data": {"$area": 33000.0, "$color": 6}, "name": "1535 - Urad za varovanje tajnih podatkov, verzija: 4", "id": "child140"}, {"children": [{"children": [], "data": {"$area": "100", "$color": 8}, "name": "Ostalo", "id": "child143"}], "data": {"$area": 100.0, "$color": 6}, "name": "1532 - Urad RS za makroekonomske analize in razvoj, verzija: 6", "id": "child142"}, {"children": [{"children": [], "data": {"$area": "35000", "$color": 8}, "name": "Ostalo", "id": "child145"}, {"children": [], "data": {"$area": "65000", "$color": 8}, "name": "Ostalo", "id": "child146"}, {"children": [], "data": {"$area": "60000", "$color": 8}, "name": "Zmogljivej\u0102\u00b6i osebni ra\u0102\u2039unalnik", "id": "child147"}], "data": {"$area": 160000.0, "$color": 6}, "name": "1538 - Slu\u0102\u00bbba Vlade Republike Slovenije za razvoj in evropske zadeve, verzija: 2", "id": "child144"}, {"children": [{"children": [], "data": {"$area": "13226", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme s pravico do popravkov, varnostnih popravkov, nadgradenj in novih verzij", "id": "child149"}, {"children": [], "data": {"$area": "1700", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje aplikativnih informacijskih sistemov", "id": "child150"}], "data": {"$area": 14926.0, "$color": 6}, "name": "2613 - In\u0102\u00b6pektorat RS za delo, verzija: 6", "id": "child148"}, {"children": [{"children": [], "data": {"$area": "3000", "$color": 8}, "name": "Ostalo", "id": "child152"}, {"children": [], "data": {"$area": "6168", "$color": 8}, "name": "Izvajanje strokovnega izobra\u0102\u00bbevanja", "id": "child153"}, {"children": [], "data": {"$area": "177524", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039nih aplikativnih informacijskih sistemov", "id": "child154"}, {"children": [], "data": {"$area": "174928", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039nih aplikativnih informacijskih sistemov", "id": "child155"}, {"children": [], "data": {"$area": "240410", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje in podpora informacijskih sistemov", "id": "child156"}, {"children": [], "data": {"$area": "32000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme", "id": "child157"}, {"children": [], "data": {"$area": "16236", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje in podpora informacijskih sistemov", "id": "child158"}, {"children": [], "data": {"$area": "546000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje in podpora informacijskih sistemov", "id": "child159"}, {"children": [], "data": {"$area": "2529", "$color": 8}, "name": "Ostalo", "id": "child160"}, {"children": [], "data": {"$area": "25000", "$color": 8}, "name": "Ostalo", "id": "child161"}, {"children": [], "data": {"$area": "1710000", "$color": 8}, "name": "Nadgradnja informacijskega sistema na novo verzijo aplikacijskega ali operacijskega sistema ali sistema za upravljanje z zbirko podatkov", "id": "child162"}, {"children": [], "data": {"$area": "25000", "$color": 8}, "name": "Ostalo", "id": "child163"}], "data": {"$area": 2958795.0, "$color": 6}, "name": "2611 - Ministrstvo za delo, dru\u0102\u00bbino in socialne zadeve, verzija: 7", "id": "child151"}, {"children": [], "data": {"$area": 0, "$color": 6}, "name": "3214 - In\u0102\u00b6pektorat RS za elektronske komunikacije, elektronsko podpisovanje in po\u0102\u00b6to, verzija: 1", "id": "child164"}, {"children": [{"children": [], "data": {"$area": "8000", "$color": 8}, "name": "Izvajanje strokovnega izobra\u0102\u00bbevanja", "id": "child166"}, {"children": [], "data": {"$area": "630", "$color": 8}, "name": "LCD zaslon 23", "id": "child167"}, {"children": [], "data": {"$area": "16000", "$color": 8}, "name": "Razvoj IS", "id": "child168"}, {"children": [], "data": {"$area": "8400", "$color": 8}, "name": "LCD zaslon 23", "id": "child169"}], "data": {"$area": 33030.0, "$color": 6}, "name": "3211 - Ministrstvo za visoko \u0102\u00b6olstvo, znanost in tehnologijo, verzija: 7", "id": "child165"}, {"children": [{"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Tiskalni\u0102\u00b6ka oprema", "id": "child171"}, {"children": [], "data": {"$area": "9000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme s pravico do popravkov, varnostnih popravkov, nadgradenj in novih verzij", "id": "child172"}], "data": {"$area": 10000.0, "$color": 6}, "name": "3212 - Urad za meroslovje, verzija: 6", "id": "child170"}, {"children": [{"children": [], "data": {"$area": "40000", "$color": 8}, "name": "Izdelava projekta za izvedbo", "id": "child174"}, {"children": [], "data": {"$area": "27000", "$color": 8}, "name": "Razvoj IS", "id": "child175"}, {"children": [], "data": {"$area": "6960", "$color": 8}, "name": "Ostalo", "id": "child176"}, {"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Razvoj IS", "id": "child177"}, {"children": [], "data": {"$area": "4955", "$color": 8}, "name": "Ostalo", "id": "child178"}], "data": {"$area": 79915.0, "$color": 6}, "name": "3513 - Arhiv Republike Slovenije, verzija: 9", "id": "child173"}, {"children": [{"children": [], "data": {"$area": "60000", "$color": 8}, "name": "Nadgradnja informacijskega sistema na novo verzijo aplikacijskega ali operacijskega sistema ali sistema za upravljanje z zbirko podatkov", "id": "child180"}], "data": {"$area": 60000.0, "$color": 6}, "name": "3511 - Ministrstvo za kulturo, verzija: 8", "id": "child179"}, {"children": [{"children": [], "data": {"$area": "760", "$color": 8}, "name": "Digitalni fotoaparati", "id": "child182"}], "data": {"$area": 760.0, "$color": 6}, "name": "3514 - In\u0102\u00b6pektorat RS za kulturo in medije, verzija: 1", "id": "child181"}, {"children": [{"children": [], "data": {"$area": "3500", "$color": 8}, "name": "Multifunkcijske naprave", "id": "child184"}], "data": {"$area": 3500.0, "$color": 6}, "name": "6206 - Upravna enota Dom\u0102\u00bbale, verzija: 6", "id": "child183"}, {"children": [{"children": [], "data": {"$area": "3546,5", "$color": 8}, "name": "Standardni osebni ra\u0102\u2039unalnik", "id": "child186"}, {"children": [], "data": {"$area": "14000", "$color": 8}, "name": "Razvoj IS", "id": "child187"}], "data": {"$area": 17546.5, "$color": 6}, "name": "2111 - Ministrstvo za gospodarstvo, verzija: 7", "id": "child185"}, {"children": [{"children": [], "data": {"$area": "100", "$color": 8}, "name": "Ostalo", "id": "child189"}], "data": {"$area": 100.0, "$color": 6}, "name": "6208 - Upravna enota Gornja Radgona, verzija: 6", "id": "child188"}, {"children": [{"children": [], "data": {"$area": "400", "$color": 8}, "name": "Ostalo", "id": "child191"}], "data": {"$area": 400.0, "$color": 6}, "name": "6209 - Upravna enota Grosuplje, verzija: 8", "id": "child190"}, {"children": [{"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje in podpora komunikacijskega omre\u0102\u00bbja", "id": "child193"}, {"children": [], "data": {"$area": "4000", "$color": 8}, "name": "Izgradnja LAN omre\u0102\u00bbja", "id": "child194"}], "data": {"$area": 5000.0, "$color": 6}, "name": "2423 - Direkcija za vodenje investicij J\u0102\u00a9I, verzija: 7", "id": "child192"}, {"children": [{"children": [], "data": {"$area": "27000", "$color": 8}, "name": "Ostalo", "id": "child196"}, {"children": [], "data": {"$area": "214000", "$color": 8}, "name": "Nadgradnja  programske opreme", "id": "child197"}], "data": {"$area": 241000.0, "$color": 6}, "name": "1911 - Ministrstvo za obrambo, verzija: 6", "id": "child195"}, {"children": [{"children": [], "data": {"$area": "3000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme s pravico do popravkov, varnostnih popravkov, nadgradenj in novih verzij", "id": "child199"}], "data": {"$area": 3000.0, "$color": 6}, "name": "1913 - In\u0102\u00b6pektorat RS za varstvo pred naravnimi in drugimi nesre\u0102\u2039ami, verzija: 6", "id": "child198"}, {"children": [{"children": [], "data": {"$area": "6000,01", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje in podpora komunikacijskega omre\u0102\u00bbja", "id": "child201"}, {"children": [], "data": {"$area": "30000", "$color": 8}, "name": "Nadgradnja informacijskega sistema na novo verzijo aplikacijskega ali operacijskega sistema ali sistema za upravljanje z zbirko podatkov", "id": "child202"}, {"children": [], "data": {"$area": "200000", "$color": 8}, "name": "Ostalo", "id": "child203"}, {"children": [], "data": {"$area": "10500", "$color": 8}, "name": "Ostalo", "id": "child204"}], "data": {"$area": 246500.01000000001, "$color": 6}, "name": "1912 - Uprava RS za za\u0102\u00b6\u0102\u2039ito in re\u0102\u00b6evanje, verzija: 6", "id": "child200"}, {"children": [{"children": [], "data": {"$area": "1500", "$color": 8}, "name": "LCD zaslon 23", "id": "child206"}], "data": {"$area": 1500.0, "$color": 6}, "name": "1915 - In\u0102\u00b6pektorat RS za obrambo, verzija: 6", "id": "child205"}, {"children": [{"children": [], "data": {"$area": "1500", "$color": 8}, "name": "Zmogljivej\u0102\u00b6i osebni ra\u0102\u2039unalnik", "id": "child208"}, {"children": [], "data": {"$area": "266", "$color": 8}, "name": "LCD zaslon 17", "id": "child209"}], "data": {"$area": 1766.0, "$color": 6}, "name": "6244 - Upravna enota Se\u0102\u00bbana, verzija: 6", "id": "child207"}, {"children": [{"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Opti\u0102\u2039ni \u0102\u2039italnik  A4 s podajalcem", "id": "child211"}], "data": {"$area": 1000.0, "$color": 6}, "name": "6216 - Upravna enota Ko\u0102\u2039evje, verzija: 7", "id": "child210"}, {"children": [{"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Ostalo", "id": "child213"}], "data": {"$area": 1000.0, "$color": 6}, "name": "6215 - Upravna enota Kamnik, verzija: 9", "id": "child212"}, {"children": [{"children": [], "data": {"$area": "3000", "$color": 8}, "name": "Multifunkcijske naprave", "id": "child215"}], "data": {"$area": 3000.0, "$color": 6}, "name": "6213 - Upravna enota Izola, verzija: 8", "id": "child214"}, {"children": [{"children": [], "data": {"$area": "4700", "$color": 8}, "name": "Aplikativni stre\u0102\u00bbniki", "id": "child217"}], "data": {"$area": 4700.0, "$color": 6}, "name": "1518 - Urad vlade za komuniciranje, verzija: 9", "id": "child216"}, {"children": [{"children": [], "data": {"$area": "3250", "$color": 8}, "name": "Ostalo", "id": "child219"}], "data": {"$area": 3250.0, "$color": 6}, "name": "1515 - Urad za enake mo\u0102\u00bbnosti, verzija: 6", "id": "child218"}, {"children": [{"children": [], "data": {"$area": "3000", "$color": 8}, "name": "Ostalo", "id": "child221"}, {"children": [], "data": {"$area": "3000", "$color": 8}, "name": "Ostalo", "id": "child222"}], "data": {"$area": 6000.0, "$color": 6}, "name": "1517 - Slu\u0102\u00bbba vlade za zakonodajo, verzija: 6", "id": "child220"}, {"children": [{"children": [], "data": {"$area": "2000", "$color": 8}, "name": "Ostalo", "id": "child224"}], "data": {"$area": 2000.0, "$color": 6}, "name": "1516 - Urad za narodnosti vlade Republike Slovenije, verzija: 6", "id": "child223"}, {"children": [{"children": [], "data": {"$area": "98000", "$color": 8}, "name": "Dopolnjevanje informacijskih aplikativnih sistemov", "id": "child226"}, {"children": [], "data": {"$area": "13000", "$color": 8}, "name": "Ostalo", "id": "child227"}, {"children": [], "data": {"$area": "69700", "$color": 8}, "name": "Nadgradnja informacijskega sistema na novo verzijo aplikacijskega ali operacijskega sistema ali sistema za upravljanje z zbirko podatkov", "id": "child228"}], "data": {"$area": 180700.0, "$color": 6}, "name": "1511 - Generalni sekretariat vlade, verzija: 10", "id": "child225"}, {"children": [{"children": [], "data": {"$area": "25000", "$color": 8}, "name": "Ostalo", "id": "child230"}, {"children": [], "data": {"$area": "30000", "$color": 8}, "name": "Ostalo", "id": "child231"}], "data": {"$area": 55000.0, "$color": 6}, "name": "2511 - Ministrstvo za okolje in prostor, verzija: 6", "id": "child229"}, {"children": [{"children": [], "data": {"$area": "80948", "$color": 8}, "name": "Ostalo", "id": "child233"}, {"children": [], "data": {"$area": "72787", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme s pravico do popravkov, varnostnih popravkov, nadgradenj in novih verzij", "id": "child234"}, {"children": [], "data": {"$area": "300000", "$color": 8}, "name": "Ostalo", "id": "child235"}, {"children": [], "data": {"$area": "60000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje programske opreme s pravico do popravkov, varnostnih popravkov, nadgradenj in novih verzij", "id": "child236"}, {"children": [], "data": {"$area": "86500", "$color": 8}, "name": "Stre\u0102\u00bbniki in stre\u0102\u00bbni\u0102\u00b6ki sistemi", "id": "child237"}, {"children": [], "data": {"$area": "150000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje programske opreme s pravico do popravkov, varnostnih popravkov, nadgradenj in novih verzij", "id": "child238"}], "data": {"$area": 750235.0, "$color": 6}, "name": "2512 - Geodetska uprava RS, verzija: 8", "id": "child232"}, {"children": [{"children": [], "data": {"$area": "9500,04", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje operacijskih sistemov", "id": "child240"}, {"children": [], "data": {"$area": "11999,96", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme s pravico do popravkov, varnostnih popravkov in nadgradenj", "id": "child241"}], "data": {"$area": 21500.0, "$color": 6}, "name": "1512 - Protokol v vladi Republike Slovenije, verzija: 6", "id": "child239"}, {"children": [{"children": [], "data": {"$area": "4068", "$color": 8}, "name": "Standardni prenosni ra\u0102\u2039unalnik", "id": "child243"}], "data": {"$area": 4068.0, "$color": 6}, "name": "4611 - Upravno sodi\u0102\u00b6\u0102\u2039e Republike Slovenije, verzija: 8", "id": "child242"}, {"children": [{"children": [], "data": {"$area": "70000", "$color": 8}, "name": "Dopolnjevanje informacijskih aplikativnih sistemov", "id": "child245"}, {"children": [], "data": {"$area": "200000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje kriti\u0102\u2039nih aplikativnih sistemov", "id": "child246"}, {"children": [], "data": {"$area": "30000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje kriti\u0102\u2039nih aplikativnih sistemov", "id": "child247"}], "data": {"$area": 300000.0, "$color": 6}, "name": "1811 - Ministrstvo za zunanje zadeve, verzija: 16", "id": "child244"}, {"children": [{"children": [], "data": {"$area": "9000", "$color": 8}, "name": "Izvajanje uporabni\u0102\u00b6kega izobra\u0102\u00bbevanja", "id": "child249"}, {"children": [], "data": {"$area": "201500", "$color": 8}, "name": "Nadgradnja informacijskega sistema na novo verzijo aplikacijskega ali operacijskega sistema ali sistema za upravljanje z zbirko podatkov", "id": "child250"}], "data": {"$area": 210500.0, "$color": 6}, "name": "1618 - Uprava RS za javna pla\u0102\u2039ila, verzija: 9", "id": "child248"}, {"children": [{"children": [], "data": {"$area": "189", "$color": 8}, "name": "Ostalo", "id": "child252"}, {"children": [], "data": {"$area": "1071", "$color": 8}, "name": "Ostalo", "id": "child253"}, {"children": [], "data": {"$area": "840", "$color": 8}, "name": "Ostalo", "id": "child254"}], "data": {"$area": 2100.0, "$color": 6}, "name": "1619 - Urad RS za nadzor prora\u0102\u2039una, verzija: 7", "id": "child251"}, {"children": [{"children": [], "data": {"$area": "8200", "$color": 8}, "name": "Ekonomi\u0102\u2039ni osebni ra\u0102\u2039unalnik", "id": "child256"}], "data": {"$area": 8200.0, "$color": 6}, "name": "1617 - Urad RS za nadzor prirejanja iger na sre\u0102\u2039o, verzija: 8", "id": "child255"}, {"children": [{"children": [], "data": {"$area": "210000", "$color": 8}, "name": "Izvajanje strokovnega izobra\u0102\u00bbevanja", "id": "child258"}, {"children": [], "data": {"$area": "5036000", "$color": 8}, "name": "Ostalo", "id": "child259"}], "data": {"$area": 5246000.0, "$color": 6}, "name": "1612 - Dav\u0102\u2039na uprava RS, verzija: 15", "id": "child257"}, {"children": [{"children": [], "data": {"$area": "429865", "$color": 8}, "name": "Osebni ra\u0102\u2039unalniki", "id": "child261"}, {"children": [], "data": {"$area": "466050", "$color": 8}, "name": "Razvoj IS", "id": "child262"}], "data": {"$area": 895915.0, "$color": 6}, "name": "1613 - Carinska uprava RS, verzija: 9", "id": "child260"}, {"children": [{"children": [], "data": {"$area": "1500", "$color": 8}, "name": "Laserski tiskalniki", "id": "child264"}], "data": {"$area": 1500.0, "$color": 6}, "name": "4514 - Dr\u0102\u00bbavno pravobranilstvo RS, verzija: 6", "id": "child263"}, {"children": [{"children": [], "data": {"$area": "2400", "$color": 8}, "name": "Ostalo", "id": "child266"}], "data": {"$area": 2400.0, "$color": 6}, "name": "6222 - Upravna enota Lendava, verzija: 6", "id": "child265"}, {"children": [{"children": [], "data": {"$area": "166,5", "$color": 8}, "name": "Ostalo", "id": "child268"}], "data": {"$area": 166.5, "$color": 6}, "name": "6225 - Upravna enota Ljutomer, verzija: 10", "id": "child267"}, {"children": [{"children": [], "data": {"$area": "150", "$color": 8}, "name": "Ostalo", "id": "child270"}], "data": {"$area": 150.0, "$color": 6}, "name": "6229 - Upravna enota Mozirje, verzija: 6", "id": "child269"}, {"children": [{"children": [], "data": {"$area": "2658,37", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme", "id": "child272"}, {"children": [], "data": {"$area": "5000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje in podpora delovnih postaj", "id": "child273"}], "data": {"$area": 7658.3699999999999, "$color": 6}, "name": "2121 - Urad RS za varstvo konkurence, verzija: 6", "id": "child271"}, {"children": [{"children": [], "data": {"$area": "32139", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039nih aplikativnih informacijskih sistemov", "id": "child275"}, {"children": [], "data": {"$area": "11900", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje operacijskih sistemov", "id": "child276"}], "data": {"$area": 44039.0, "$color": 6}, "name": "2123 - Tr\u0102\u00bbni in\u0102\u00b6pektorat RS, verzija: 7", "id": "child274"}, {"children": [{"children": [], "data": {"$area": "3690", "$color": 8}, "name": "Nadgradnja po\u0102\u00bbarne pregrade - modul", "id": "child278"}], "data": {"$area": 3690.0, "$color": 6}, "name": "2126 - Urad RS za intelektualno lastnino, verzija: 6", "id": "child277"}, {"children": [{"children": [], "data": {"$area": "597,89", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme", "id": "child280"}], "data": {"$area": 597.88999999999999, "$color": 6}, "name": "2128 - In\u0102\u00b6pektorat Republike Slovenije za energetiko in rudarstvo, verzija: 7", "id": "child279"}, {"children": [{"children": [], "data": {"$area": "90000", "$color": 8}, "name": "Ostalo", "id": "child282"}, {"children": [], "data": {"$area": "100000,02", "$color": 8}, "name": "Dopolnjevanje informacijskih aplikativnih sistemov", "id": "child283"}, {"children": [], "data": {"$area": "30000", "$color": 8}, "name": "Ostalo", "id": "child284"}, {"children": [], "data": {"$area": "7000", "$color": 8}, "name": "Ostalo", "id": "child285"}, {"children": [], "data": {"$area": "147450", "$color": 8}, "name": "Analiza varnostnih zahtev", "id": "child286"}, {"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Ostalo", "id": "child287"}, {"children": [], "data": {"$area": "77320", "$color": 8}, "name": "Ostalo", "id": "child288"}, {"children": [], "data": {"$area": "132760", "$color": 8}, "name": "Ostalo", "id": "child289"}, {"children": [], "data": {"$area": "4000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje programske opreme s pravico do popravkov, varnostnih popravkov, nadgradenj in novih verzij", "id": "child290"}, {"children": [], "data": {"$area": "1000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje in podpora informacijskih sistemov", "id": "child291"}], "data": {"$area": 590530.02000000002, "$color": 6}, "name": "1714 - Policija, verzija: 10", "id": "child281"}, {"children": [{"children": [], "data": {"$area": "17583", "$color": 8}, "name": "Izdelava projekta za izvedbo", "id": "child293"}, {"children": [], "data": {"$area": "84999,6", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje in preizkus naprav za klimatizacijo", "id": "child294"}, {"children": [], "data": {"$area": "10000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme s pravico do popravkov, varnostnih popravkov, nadgradenj in novih verzij", "id": "child295"}, {"children": [], "data": {"$area": "135000", "$color": 8}, "name": "Ostalo", "id": "child296"}, {"children": [], "data": {"$area": "15000", "$color": 8}, "name": "Razvoj IS", "id": "child297"}, {"children": [], "data": {"$area": "8750", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme s pravico do popravkov, varnostnih popravkov, nadgradenj in novih verzij", "id": "child298"}, {"children": [], "data": {"$area": "44000", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje in podpora komunikacijskega omre\u0102\u00bbja", "id": "child299"}, {"children": [], "data": {"$area": "20400", "$color": 8}, "name": "Vzdr\u0102\u00bbevanje licen\u0102\u2039ne programske opreme s pravico do popravkov, varnostnih popravkov in nadgradenj", "id": "child300"}, {"children": [], "data": {"$area": "15471,36", "$color": 8}, "name": "Izdelava \u0102\u00b6tudije izvedljivosti", "id": "child301"}, {"children": [], "data": {"$area": "23040", "$color": 8}, "name": "Ostalo", "id": "child302"}, {"children": [], "data": {"$area": "86900", "$color": 8}, "name": "Podpora aplikativnemu okolje", "id": "child303"}, {"children": [], "data": {"$area": "80000", "$color": 8}, "name": "Ostalo", "id": "child304"}, {"children": [], "data": {"$area": "392717", "$color": 8}, "name": "Ostalo", "id": "child305"}, {"children": [], "data": {"$area": "765000", "$color": 8}, "name": "Ostalo", "id": "child306"}], "data": {"$area": 1698860.96, "$color": 6}, "name": "3111 - Ministrstvo za javno upravo, verzija: 8", "id": "child292"}, {"children": [{"children": [], "data": {"$area": "300", "$color": 8}, "name": "Ostalo", "id": "child308"}, {"children": [], "data": {"$area": "500", "$color": 8}, "name": "LCD zaslon 19", "id": "child309"}], "data": {"$area": 800.0, "$color": 6}, "name": "6230 - Upravna enota Murska Sobota, verzija: 6", "id": "child307"}, {"children": [{"children": [], "data": {"$area": "2000", "$color": 8}, "name": "Zmogljivej\u0102\u00b6i prenosni ra\u0102\u2039unalnik", "id": "child311"}], "data": {"$area": 2000.0, "$color": 6}, "name": "6232 - Upravna enota Novo mesto, verzija: 7", "id": "child310"}], "data": {"$area": 20837908.710000001, "$color": 5}, "id": "nodeTop", "name": "IT Proracun 2010"} ;
+    
+    var tm = new TM.Squarified({
+                //Where to inject the Treemap
+                rootId: 'infovis',
+                addLeftClickHandler: true,  
+                addRightClickHandler: true,
+                Color: {
+                  allow: true,
+                  minValue: -100,
+                  maxValue: 100,
+                  minColorValue: [0, 255, 50],
+                  maxColorValue: [255, 0, 50] 
+                }
+             });
+            //load JSON data
+    tm.loadJSON(json);
+}

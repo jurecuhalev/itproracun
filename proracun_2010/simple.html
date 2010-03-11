@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″ />
+    <link type="text/css" rel="stylesheet" href="example.css" />
+
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="example.js" ></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var x = window.innerWidth*0.95+'px';
+        var y = window.innerHeight*0.95+'px';
+        $("#infovis").css('width', x);
+        $("#infovis").css('height', y);
+        
+        init();
+      });    
+    </script>
+    </head>
+
+    <body>
+
+             <div id="infovis" />
+    </body>
+</html>
