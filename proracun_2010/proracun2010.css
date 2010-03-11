@@ -80,4 +80,5 @@ html, body {
 
 #legend {
   color: white;
+  float: left;
 }
