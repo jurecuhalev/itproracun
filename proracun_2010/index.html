@@ -1,22 +1,22 @@
 <html>
     <head>
 
-    <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″ />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link type="text/css" rel="stylesheet" href="proracun2010.css" />
 
-    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="jquery-1.4.2.js"></script>    
     <script type="text/javascript" src="jit.js" ></script>
     <script type="text/javascript" src="proracun2010.js" ></script>
     
     <script type="text/javascript">
       $(document).ready(function() {
-        var x = window.innerWidth*0.95+'px';
-        var y = window.innerHeight*0.95+'px';
+        var x = $(document).width()*0.95+'px';
+        var y = $(document).height()*0.95+'px';
         $("#infovis").css('width', x);
         $("#infovis").css('height', y);
-        
         init();
-      });    
+      });
+    
     </script>
     </head>
 
@@ -24,7 +24,7 @@
       <div>
              <div id="infovis" />
       </div>
-             <div id="footer">Legenda: odtenki zelene - licence in vzdrževanje; rjava - strojna oprema</a> | Levi klik na porabnika poveča pogled, desni klik pomanjša <br /> <a href="http://e-uprava.gov.si/eud/ispo/neobdelani_podatki/proracun_2010.xls">Vir podakov</a> <a href="proracun_2010.xls">(kopija)</a> | <a href="http://thejit.org/">JavaScript InfoVis Toolkit</a> | <a href="http://github.com/gandalfar/itproracun">Izvorna koda</a> | Povezal skupaj: <a href="http://www.jurecuhalev.com/blog/">jure</a></p></div>
+             <div id="footer">Legenda: odtenki zelene - licence in vzdrževanje; rjava - strojna oprema | Levi klik na porabnika poveča pogled, desni klik pomanjša <br /> <a href="http://e-uprava.gov.si/eud/ispo/neobdelani_podatki/proracun_2010.xls">Vir podakov</a> <a href="proracun_2010.xls">(kopija)</a> | <a href="http://thejit.org/">JavaScript InfoVis Toolkit</a> | <a href="http://github.com/gandalfar/itproracun">Izvorna koda</a> | Povezal skupaj: <a href="http://www.jurecuhalev.com/blog/">jure</a></div>
              
     </body>
 </html>
