@@ -120,18 +120,18 @@ for i in struct:
         koda = int(p['element_koda'])
         
         if (koda > 10000 and koda < 80002):
-          pos_child['data']['$color'] = 60; # hardware
+          pos_child['data']['$color'] = 90; # hardware
           
         elif (koda > 100000 and koda < 100017):
-          pos_child['data']['$color'] = 60; # multimedia
+          pos_child['data']['$color'] = 90; # multimedia
 
-        elif (koda > 110007 and koda < 180011):
-          pos_child['data']['$color'] = 60; # network
+        elif (koda > 110007 and koda < 180011) or (koda >= 290001 and koda <= 300001) or (koda in [350002, 350003, 350004, 350005, 350007, 350008, 400014, 400015, 400018, 400022]):
+          pos_child['data']['$color'] = 65; # network
 
-        elif (koda > 190001 and koda < 300002):
-          pos_child['data']['$color'] = 60; # serverji
+        elif (koda > 190001 and koda <= 300001):
+          pos_child['data']['$color'] = 50; # serverji
 
-        elif (koda > 310000 and koda < 410007):
+        elif (koda >= 310001 and koda < 410007):
           pos_child['data']['$color'] = 10; # software, vzdrzevanje, licence
           
         elif (koda > 420000 and koda < 450006):
@@ -175,7 +175,7 @@ print """
                   
                   onShow: function(tip, node, isLeaf, domElement) {
                     if (node.data.cena_enote) {
-                      tip.innerHTML = "<b>" + node.data.namen_opis + "</b>" + "<br />" + node.data.podkonto_opis + "<br /></br >" + node.data.kolicina + ' * ' + node.data.cena_enote + ' EUR = ' + node.data.vrednost + ' EUR  <br />' + node.data.element_opis;
+                      tip.innerHTML = "<b>" + node.data.namen_opis + "</b>" + "<br />" + node.data.podkonto_opis + "<br /></br >" + node.data.kolicina + ' * ' + node.data.cena_enote + ' EUR = ' + node.data.vrednost + ' EUR  <br />' + node.data.element_opis + ' [' + node.data.element_koda + ']';
                     } else {
                       tip.innerHTML = "<b>" + node.name + "</b>" + "<br />" + node.data.skupaj + ' EUR';
                     }; 

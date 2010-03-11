@@ -72,6 +72,26 @@ Network
 180009 Nadgradnja  programske opreme Transportna stikalna oprema
 180010 Ostalo Transportna stikalna oprema
 
+290001 Ožičenje Pasivna mrežna oprema
+290002 Ožičenje optično Pasivna mrežna oprema
+290004 Razdelilne omare Pasivna mrežna oprema
+290008 Prehodi Pasivna mrežna oprema
+290011 Povezovalni kabli Pasivna mrežna oprema
+290012 Povezovalni kabli optični Pasivna mrežna oprema
+
+350002 Vzdrževanje in podpora mrežnih storitev Vzdrževanje in podpora
+350003 Vzdrževanje in podpora komunikacijskega omrežja Vzdrževanje in podpora
+350004 Vzdrževanje, podpora in upravljanje komunikacijskega omrežja Vzdrževanje in podpora
+350005 Vzdrževanje in podpora informacijskih sistemov Vzdrževanje in podpora
+
+350007 Vzdrževanje in podpora pasivne mrežne opreme Vzdrževanje in podpora
+350008 Vzdrževanje in podpora aktivne mrežne opreme Vzdrževanje in podpora
+
+400014 Aktivna mrežna oprema Vzdrževanje strojne opreme
+400015 Usmerjevalniki Vzdrževanje strojne opreme
+400018 Transportna stikalna oprema Vzdrževanje strojne opreme
+400022 Pasivna mrežna oprema Vzdrževanje strojne opreme
+
 
 Serverji
 --------
@@ -106,12 +126,6 @@ Serverji
 250012 Nadgradnja za UPS Sistemi za neprekinjeno napajanje
 260004 Nadzorni sistem za fizične merilne naprave i n senzorje (temperatura, vodostaj, gibanje) Nadzorni sistemi
 260007 Ostalo Nadzorni sistemi
-290001 Ožičenje Pasivna mrežna oprema
-290002 Ožičenje optično Pasivna mrežna oprema
-290004 Razdelilne omare Pasivna mrežna oprema
-290008 Prehodi Pasivna mrežna oprema
-290011 Povezovalni kabli Pasivna mrežna oprema
-290012 Povezovalni kabli optični Pasivna mrežna oprema
 300001 Ostalo Ostala strojna  računalniška oprema
 
 Software, licence, vzdrzevanje
@@ -133,13 +147,8 @@ Software, licence, vzdrzevanje
 330001 Priprava strokovne tehnične dokumentacije Razpis
 330002 Priprava pravnih podlag in navodil uporabnikov Razpis
 350001 Vzdrževanje in podpora delovnih postaj Vzdrževanje in podpora
-350002 Vzdrževanje in podpora mrežnih storitev Vzdrževanje in podpora
-350003 Vzdrževanje in podpora komunikacijskega omrežja Vzdrževanje in podpora
-350004 Vzdrževanje, podpora in upravljanje komunikacijskega omrežja Vzdrževanje in podpora
-350005 Vzdrževanje in podpora informacijskih sistemov Vzdrževanje in podpora
+
 350006 Vzdrževanje in podpora naprav za neprekinjeno napajanje Vzdrževanje in podpora
-350007 Vzdrževanje in podpora pasivne mrežne opreme Vzdrževanje in podpora
-350008 Vzdrževanje in podpora aktivne mrežne opreme Vzdrževanje in podpora
 350009 Vzdrževanje in preizkus naprav neprekinjenega napajanja Vzdrževanje in podpora
 350010 Vzdrževanje in preizkus naprav za klimatizacijo Vzdrževanje in podpora
 350011 Ostalo Vzdrževanje in podpora
@@ -171,11 +180,8 @@ Software, licence, vzdrzevanje
 400010 Oprema za podporo večpredstavnosti Vzdrževanje strojne opreme
 400012 Strežniki in strežniški sistemi Vzdrževanje strojne opreme
 400013 Sistemi in enote za varnostno shranjevanje podatkov Vzdrževanje strojne opreme
-400014 Aktivna mrežna oprema Vzdrževanje strojne opreme
-400015 Usmerjevalniki Vzdrževanje strojne opreme
-400018 Transportna stikalna oprema Vzdrževanje strojne opreme
+
 400020 Avtentikacijski sistemi Vzdrževanje strojne opreme
-400022 Pasivna mrežna oprema Vzdrževanje strojne opreme
 400023 Ostala strojna računalniška oprema Vzdrževanje strojne opreme
 400024 Ostalo Vzdrževanje strojne opreme
 410001 Vzdrževanje aplikativnih informacijskih sistemov Vzdrževanje programske opreme
