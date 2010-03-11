@@ -82,7 +82,6 @@ Network
 350002 Vzdrževanje in podpora mrežnih storitev Vzdrževanje in podpora
 350003 Vzdrževanje in podpora komunikacijskega omrežja Vzdrževanje in podpora
 350004 Vzdrževanje, podpora in upravljanje komunikacijskega omrežja Vzdrževanje in podpora
-350005 Vzdrževanje in podpora informacijskih sistemov Vzdrževanje in podpora
 
 350007 Vzdrževanje in podpora pasivne mrežne opreme Vzdrževanje in podpora
 350008 Vzdrževanje in podpora aktivne mrežne opreme Vzdrževanje in podpora
@@ -127,6 +126,9 @@ Serverji
 260004 Nadzorni sistem za fizične merilne naprave i n senzorje (temperatura, vodostaj, gibanje) Nadzorni sistemi
 260007 Ostalo Nadzorni sistemi
 300001 Ostalo Ostala strojna  računalniška oprema
+350005 Vzdrževanje in podpora informacijskih sistemov Vzdrževanje in podpora
+400012 Strežniki in strežniški sistemi Vzdrževanje strojne opreme
+400006 Tiskalniška oprema Vzdrževanje strojne opreme
 
 Software, licence, vzdrzevanje
 --------
@@ -175,10 +177,10 @@ Software, licence, vzdrzevanje
 400001 Osebni računalniki Vzdrževanje strojne opreme
 400002 Prenosni računalniki Vzdrževanje strojne opreme
 400004 Računalniški zasloni Vzdrževanje strojne opreme
-400006 Tiskalniška oprema Vzdrževanje strojne opreme
+
 400007 Optični čitalniki Vzdrževanje strojne opreme
 400010 Oprema za podporo večpredstavnosti Vzdrževanje strojne opreme
-400012 Strežniki in strežniški sistemi Vzdrževanje strojne opreme
+
 400013 Sistemi in enote za varnostno shranjevanje podatkov Vzdrževanje strojne opreme
 
 400020 Avtentikacijski sistemi Vzdrževanje strojne opreme

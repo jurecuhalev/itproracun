@@ -125,10 +125,10 @@ for i in struct:
         elif (koda > 100000 and koda < 100017):
           pos_child['data']['$color'] = 90; # multimedia
 
-        elif (koda > 110007 and koda < 180011) or (koda >= 290001 and koda <= 300001) or (koda in [350002, 350003, 350004, 350005, 350007, 350008, 400014, 400015, 400018, 400022]):
+        elif (koda > 110007 and koda < 180011) or (koda >= 290001 and koda <= 300001) or (koda in [350002, 350003, 350004, 350007, 350008, 400014, 400015, 400018, 400022]):
           pos_child['data']['$color'] = 65; # network
 
-        elif (koda > 190001 and koda <= 300001):
+        elif (koda > 190001 and koda <= 300001) or (koda in [3500005, 400006, 400012]):
           pos_child['data']['$color'] = 50; # serverji
 
         elif (koda >= 310001 and koda < 410007):
